@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Lyfe - Formulario</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Lyfe, un superset de la vida</a></h1>
+    </header>
+   
+    <nav>
+        <ul>
+            <li><a href="disipacion.html">Disipación</a></li>
+            <li><a href="autocatalisis.html">Autocatalisis</a></li>
+            <li><a href="homeostasis.html">Homeostasis</a></li>
+            <li><a href="aprendizaje.html">Aprendizaje</a></li>
+        </ul>
+    </nav>
+
+    <img class="hero" src="img/hero.jpg" alt=""> 
+
+    <main class="main-formulario">
+        <h2>Formulario</h2>
+       <form action="">
+            <fieldset>
+                <legend>Tus Datos</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" required placeholder="Pepito">
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellido</label>
+                    <input id="apellido" type="text" placeholder="Perez">
+                </div>
+                <div class="campo">
+                    <label for="organizacion">Organizacion</label>
+                    <input id="organizacion" type="text" placeholder="Universidad Universitaria">
+                </div>
+                <div class="campo">
+                    <label for="tel">Telefono</label>
+                    <input id="tel" type="tel" placeholder="666 666 666">
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo</label>
+                    <input id="correo" type="email" required placeholder="pepito@universo.com" required>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Tus Dudas</legend>
+                <div class="campo">
+                    <label for="tema">Tema</label>
+                    <select id="tema" required>
+                        <option selected disabled>--Seleccione--</option>
+                        <option value="disp">Disipación</option>
+                        <option value="autocat">Autocatálisis</option>
+                        <option value="aprend">Aprendizaje</option>
+                        <option value="homeo">Homeostásis</option>
+                        <option  value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="duda">Duda</label>
+                    <textarea  id="duda" cols="50" rows="10">De dónde vienen los niños?</textarea>
+                </div>
+                <div class="campo">
+                    <p>Recibir respuesta a través de: </p> 
+
+                    <label for="telefono">Telfóno</label>
+                    <input id="telefono" type="radio" name="resp">
+
+                    <label for="email">Correo</label>
+                    <input id="email" type="radio" name="resp" checked>
+
+                </div>
+            </fieldset>
+
+            <div class="enviar">
+                <div>
+                    <label for="spam">Acepto recibir spam a diario</label>
+                <input type="checkbox" name="" id="spam" required>
+                </div>
+               <input type="submit">
+            </div>
+           
+       </form>
+    </main>
+   
+    <footer>
+        <section>
+            <h2>Fuentes</h2>
+            <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7235751/">Defining Lyfe in the Universe: From Three Privileged Functions to Four Pillars</a>
+            <a target="_blank" href="https://astrobiology.nasa.gov/news/the-pillars-of-lyfe-in-the-universe/">The Pillars of Lyfe in the Universe</a>
+            <a target="_blank" href="https://wikipedia.org">Wikipedia, la enciclopedia libre</a>
+        </section>
+        <section>
+            <h2>Contacto</h2>
+            <a target="_blank" href="https://github.com/AaronMaiden99">Mi github</a>
+            <a href="mailto:alavinz@yahoo.com">Correo electronico</a>
+            <a target="_blank" href="img/trollface-dancing.gif">Mi onlyfans</a>
+        </section>
+        <section>
+            <h2>Saber más</h2>
+           <a href="formulario.html"> Llena el siguiente formulario</a>
+        </section>
+    
+    </footer>
+</body>
+</html>

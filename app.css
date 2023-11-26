@@ -1,0 +1,173 @@
+/*Cambiamos el box-sizing para  que el tamaño no se vea afectado por el contenido ni por el padding */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* El truco para usar "1rem = 10px"*/
+html {
+    /* de "16px" a "10px" */
+    font-size: 62.5%;
+  }
+body {
+    /* De vuelta a "16px" */
+    font-size: 1.6rem;
+    max-width: 120rem;
+    /*Otros ajustes del body*/
+    margin: 4rem auto;
+    line-height: 1.5;
+    max-width: 120rem;
+  }
+
+h1, h2, h3{
+    margin: 0;
+    text-align: center;
+}
+
+/*- Estilo para todos los enlaces del sitio-*/
+a, input[type="submit"]{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1rem;
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    
+}
+ a:hover, input[type="submit"]:hover{
+    color: white;
+    background-color: lightcoral;
+    font-weight: 900;
+}
+
+/*- Header -*/
+    h1{    
+        text-align: center;
+    }
+    /*- ajustes específicos del enlace del header-*/
+    h1 a{
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+    h1 a:hover{
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+/*- Nav-*/
+    nav ul{
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0;
+    }
+
+
+/*- Hero -*/
+    .hero{
+        display: block;
+        height: 30rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+/*--  Primer artículo --*/
+    article:nth-child(1){
+        background-color: #FFC7F9;
+        padding: 5rem;
+    }
+    /*Utilidad que usamos para quitar el margin bottom de las ul y del ultimo li*/
+    .quitar-margin-bottom{
+        margin-bottom: 0;
+    }
+
+/*-- Segundo articulo --*/
+    article:nth-child(2){
+        background-color: #ffeba4;
+        padding: 5rem;
+    }
+
+    .pilares{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }   
+    .pilar{
+        background-color: #c2fff2;
+    }
+    .pilar img{
+        height: 30rem;
+        width: 100%;
+        object-fit: cover;
+
+    }
+    .pilar .pilar-info{
+        height: 25rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+        .pilar-info h3, .pilar-info p{
+            margin: 0;
+        }
+        .pilar-info h3{
+        font-size: 2.5rem;
+        }
+        .pilar-info p{
+            text-align: center;
+        }
+  
+/*- Footer -*/
+footer{
+    padding: 3rem;
+    background-color: rgb(221, 221, 221);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+footer h2{
+    margin-bottom: 2rem;
+}
+
+/* --Formulario-- */
+.main-formulario {
+    padding: 5rem 20rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    background-color: #c2fff2;
+}
+
+form legend{
+    border: solid .1rem black;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    background-color: lightcoral;
+    text-align: center;
+    padding: 1rem;
+}
+
+form fieldset{
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: #ffeba4;
+    text-align: center;
+
+}
+
+.campo {
+    margin: 2rem 0;
+}
+
+.enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enviar input[type="submit"]{
+    width: 100%;
+}
